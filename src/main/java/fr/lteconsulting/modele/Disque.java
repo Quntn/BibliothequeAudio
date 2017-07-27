@@ -9,6 +9,11 @@ public class Disque
 	private String codeBarre;
 	private String nom;
 	private List<Chanson> chansons = new ArrayList<>();
+	
+	@Override
+    public String toString() {
+        return "codeBarre=" + codeBarre + ", nom=" + nom + ", chansons=" + chansons +"\r\n";
+    }
 
 	public Disque( String nom )
 	{
@@ -70,4 +75,6 @@ public class Disque
 				chanson.afficher();
 		}
 	}
+
+
 }
